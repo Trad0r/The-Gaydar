@@ -1,7 +1,8 @@
 import time
 import random
 import os
-
+#please push all changes to git andrew!
+#i swear to god if you don't
 os.system('clear')
 print("""
  ░▒▓██████▓▒░   ░▒▓██████▓▒░  ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓███████▓▒░   ░▒▓██████▓▒░  ░▒▓███████▓▒░  
@@ -23,8 +24,9 @@ print("""
 
 
 """)
-print("You are using a pre-release version of GAYDAR! Expect bugs.")
+print("Welcome to GAYDAR! Let's get things started for you.")
 print()
+time.sleep(0.5)
 print("Activating GAYDAR...")
 print()
 time.sleep(3)
