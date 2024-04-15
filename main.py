@@ -164,7 +164,7 @@ time.sleep(1)
 os.system('clear')
 #line too long? nah, you can never have it too long.
 ascii_art_lines = [
-"    ░▒▓███████▓▒░  ░▒▓██████▓▒░   ░▒▓██████▓▒░  ░▒▓███████▓▒░  ",
+  "  ░▒▓███████▓▒░  ░▒▓██████▓▒░   ░▒▓██████▓▒░  ░▒▓███████▓▒░  ",
   " ░▒▓█▓▒░        ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ",
   " ░▒▓█▓▒░        ░▒▓█▓▒░        ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ",
   "  ░▒▓██████▓▒░  ░▒▓█▓▒░        ░▒▓████████▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ",
@@ -248,8 +248,7 @@ while True:
     print("Alright, the results are in.")
     time.sleep(1)
     print()
-    print(name, "is", "100", "%", """lesbian! Looks like they passed the test 
-    with flying colors!""")
+    print(name, "is", "100", "%", "lesbian! Looks like they passed the test with flying colors!")
     break
   if gender.lower() == "boy ":
     print("Ok, I'll try calculating it again with the correct infomation now.")
@@ -258,8 +257,7 @@ while True:
     print("Alright, the results are in.")
     time.sleep(1)
     print()
-    print(name, "is", "100", "%", """gay! Looks like they passed the test
-    with flying colors!""")
+    print(name, "is", "100", "%", "gay! Looks like they passed the test with flying colors!")
     break
   if gender.lower() == " girl":
     print("Ok, I'll try calculating it again with the correct infomation now.")
