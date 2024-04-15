@@ -14,3 +14,5 @@ Put a space after you input the gender for 100%!
 Example:boy 
 
 Whenever you get people laughing at someone, you can thank the GAYDAR!
+
+Also, if you wanna use this crap, just download main or follow the replit link.
