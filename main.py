@@ -74,7 +74,8 @@ while True:
     break
   else:
     print("Ok then.")
-
+#it took way too long to type this loading text out
+#like two days too long
 print()
 time.sleep(1)
 print("Baking a cake.")
@@ -175,6 +176,7 @@ print("Stuff isn't adding up, I need one more thing from you.")
 time.sleep(1)
 print()
 print(f"I should have asked you this in the beginning, but what's {name}'s gender?")
+#this could be optimized... but i'm too lazy to mess with the spaghetti that's here now.
 while True:
   gender = input("(boy/girl) ")
   if gender.lower() == "Boy":

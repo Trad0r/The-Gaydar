@@ -1,4 +1,4 @@
-A little coded shitpost I made while bored in class to make fun of my friends. And now you can too!
+A little coded thingy I made while bored in class to make fun of my friends. And now you can too!
 
 With the GAYDAR, bullying has become way easier.
 
@@ -15,4 +15,4 @@ Example:boy
 
 Whenever you get people laughing at someone, you can thank the GAYDAR!
 
-Also, if you wanna use this crap, just download main or follow the replit link.
+Also, if you wanna use this garbage, just download main or follow the replit link.
