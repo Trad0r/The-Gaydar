@@ -8,6 +8,7 @@ Here's how to rig it.
 Put a space before you input the gender for 1000%!
 
 Example: boy
+
 Put a space after you input the gender for 100%!
 
 Example:boy 
