@@ -3,94 +3,258 @@ import random
 import os
 
 os.system('clear')
-print("GAYDAR 9.6.0")
-print("YOU ARE USING THE LATEST VERSION OF GAYDAR!")
+print("""
+ ░▒▓██████▓▒░   ░▒▓██████▓▒░  ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓███████▓▒░   ░▒▓██████▓▒░  ░▒▓███████▓▒░  
+░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ 
+░▒▓█▓▒░        ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ 
+░▒▓█▓▒▒▓███▓▒░ ░▒▓████████▓▒░  ░▒▓██████▓▒░  ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓████████▓▒░ ░▒▓███████▓▒░  
+░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░    ░▒▓█▓▒░     ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ 
+░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░    ░▒▓█▓▒░     ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ 
+ ░▒▓██████▓▒░  ░▒▓█▓▒░░▒▓█▓▒░    ░▒▓█▓▒░     ░▒▓███████▓▒░  ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░                                                                       
+""")
+print("""
+   ░▒▓█▓▒░          ░▒▓████████▓▒░          ░▒▓████████▓▒░ 
+░▒▓████▓▒░          ░▒▓█▓▒░░▒▓█▓▒░          ░▒▓█▓▒░░▒▓█▓▒░ 
+   ░▒▓█▓▒░          ░▒▓█▓▒░░▒▓█▓▒░          ░▒▓█▓▒░░▒▓█▓▒░ 
+   ░▒▓█▓▒░          ░▒▓█▓▒░░▒▓█▓▒░          ░▒▓█▓▒░░▒▓█▓▒░ 
+   ░▒▓█▓▒░          ░▒▓█▓▒░░▒▓█▓▒░          ░▒▓█▓▒░░▒▓█▓▒░ 
+   ░▒▓█▓▒░ ░▒▓██▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓██▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ 
+   ░▒▓█▓▒░ ░▒▓██▓▒░ ░▒▓████████▓▒░ ░▒▓██▓▒░ ░▒▓████████▓▒░ 
+
+
+""")
+print("You are using a pre-release version of GAYDAR! Expect bugs.")
 print()
-print("ACTIVATING GAYDAR")
-print(".....")
+print("Activating GAYDAR...")
 print()
 time.sleep(3)
-print("GAYDAR ACTIVATED")
-print("SCANNING FOR TARGETS")
-print(".....")
+print("GAYDAR Activated!")
+print("Scanning for targets...")
 print()
 time.sleep(3)
-print(random.randint(100, 1000), "POSSIBLE TARGETS FOUND")
+print(random.randint(1, 10000), "possible targets found.")
 print()
 
 while True:
-  name = input("ENTER TARGET NAME: ")
-  confirm = input(f"ARE YOU SURE YOU WANT TO TARGET {name}? (y/n): ")
+  print("Who would you like to target?")
+  name = input()
+  print(f"Just to be sure, do you want to target {name}?")
+  confirm = input("(y/n) ")
   print()
 
   if confirm.lower() == "Y":
-    print("TARGET LOCKED")
+    os.system('clear')
+    print("""
+ ░▒▓███████▓▒░  ░▒▓██████▓▒░   ░▒▓██████▓▒░  ░▒▓███████▓▒░  ░▒▓███████▓▒░  ░▒▓█▓▒░ ░▒▓███████▓▒░   ░▒▓██████▓▒░                             
+░▒▓█▓▒░        ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░                            
+░▒▓█▓▒░        ░▒▓█▓▒░        ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░                                   
+ ░▒▓██████▓▒░  ░▒▓█▓▒░        ░▒▓████████▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒▒▓███▓▒░                            
+       ░▒▓█▓▒░ ░▒▓█▓▒░        ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░                            
+       ░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓██▓▒░ ░▒▓██▓▒░ ░▒▓██▓▒░ 
+░▒▓███████▓▒░   ░▒▓██████▓▒░  ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░  ░▒▓██████▓▒░  ░▒▓██▓▒░ ░▒▓██▓▒░ ░▒▓██▓▒░ 
+
+
+""")
     break
   if confirm.lower() == "y":
-   print("TARGET LOCKED")
-   break
-  else:
-   print("TARGET LOCK FAILURE, TRY AGAIN")
+    os.system('clear')
+    print("""
+ ░▒▓███████▓▒░  ░▒▓██████▓▒░   ░▒▓██████▓▒░  ░▒▓███████▓▒░  ░▒▓███████▓▒░  ░▒▓█▓▒░ ░▒▓███████▓▒░   ░▒▓██████▓▒░                             
+░▒▓█▓▒░        ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░                            
+░▒▓█▓▒░        ░▒▓█▓▒░        ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░                                   
+ ░▒▓██████▓▒░  ░▒▓█▓▒░        ░▒▓████████▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒▒▓███▓▒░                            
+       ░▒▓█▓▒░ ░▒▓█▓▒░        ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░                            
+       ░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓██▓▒░ ░▒▓██▓▒░ ░▒▓██▓▒░ 
+░▒▓███████▓▒░   ░▒▓██████▓▒░  ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░  ░▒▓██████▓▒░  ░▒▓██▓▒░ ░▒▓██▓▒░ ░▒▓██▓▒░ 
 
-print(".....")
-print("BAKING A CAKE")
-print()
-time.sleep(0.5)
-print("FINDING FRIEND GROUPS")
-time.sleep(1)
-print("ERROR: RESULT CAN NOT BE 0")
-print()
-time.sleep(0.5)
-print("TAKING HAPPY PILLS")
-print()
-time.sleep(0.5)
-print("LEGALIZING NUKEULAR BOMBS")
-time.sleep(0.5)
-print()
-print("HACKING THE MAINFRAME")
-print()
-time.sleep(0.5)
-print("FIGHTING SIXTH GRADERS")
-print()
-time.sleep(0.5)
-print("FINDING FATHER")
-time.sleep(1)
-print("ERROR: CAN NOT FIND SOMETHING THAT DOES NOT EXIST")
-print()
-time.sleep(0.5)
-print("HAVING EXISTENTIAL CRISIS")
-print()
-time.sleep(0.5)
-print("FINISHING WHAT BIN LADEN STARTED")
-print()
-time.sleep(0.5)
-print("CHECKING SEARCH HISTORY")
-print()
-time.sleep(0.5)
-print("PROCRASTINATING")
-print()
-time.sleep(0.5)
-print("PREPARING FOR TITANFALL")
-print()
-time.sleep(0.5)
-print("DOUBLE CHECKING THE LIST")
-print()
-time.sleep(0.5)
-print("LISTENING TO THE CHIKI'S CHASE SOUNDTRACK ON REPEAT")
-print()
-time.sleep(0.5)
-print("ASKING ALEXA TO PLAY DESPACITO")
-print(".....")
+
+""")
+    break
+  else:
+    print("Ok then.")
+
 print()
 time.sleep(1)
-print("SCAN COMPLETE")
-print("WARNING: TURBO ENABLED. CUTTING CORNERS,"
-      " FINAL RESULT MAY BE INACCURATE")
-print("CALCULTING RESULTS. ETA: 10 SECONDS")
+print("Baking a cake.")
+time.sleep(0.5)
+print("Finding friends...")
+time.sleep(2)
+print("Error: value can't be zero!")
+time.sleep(1)
+print("Taking happy pills.")
+time.sleep(0.5)
+print("Legalizing nuclear bombs.")
+time.sleep(0.5)
+print("Hacking the mainframe.")
+time.sleep(0.5)
+print("Fighting third graders.")
+time.sleep(0.5)
+print("Finding father...")
+time.sleep(2)
+print("Error: can't find something that doesn't exist!")
+time.sleep(1)
+print("Having existential crisis.")
+time.sleep(0.5)
+print("Finishing what Bin Laden started.")
+time.sleep(0.5)
+print("Checking search history.")
+time.sleep(0.5)
+print("Bleaching eyes.")
+time.sleep(0.5)
+print("Preparing for titanfall.")
+time.sleep(0.5)
+print("Checking for brain wrinkles...")
+time.sleep(2)
+print("Smooth brain detected! Cutting corners.")
+time.sleep(1)
+print("Removing human rights.")
+time.sleep(0.5)
+print("Listening to the chiki's chase soundtrack on loop.")
+time.sleep(0.5)
+print("Burning down the house.")
+time.sleep(0.5)
+print("Staying up til midnight.")
+time.sleep(0.5)
+print("Bringing death to the MPLA.")
+time.sleep(0.5)
+print("Attempting a manual override on the wall.")
+time.sleep(0.5)
+print("Getting a divorce.")
+time.sleep(0.5)
+print("Playing osu.")
+time.sleep(0.5)
+print("Turning it off an back on again.")
+time.sleep(0.5)
+print("Finding who asked...")
+time.sleep(2)
+print("Oh my god, we found him!")
+time.sleep(1)
+print("Checking if a throw is our only option.")
+time.sleep(0.5)
+print("Spreading democracy across the galaxy.")
+time.sleep(0.5)
+print("Doing homework...")
+time.sleep(2)
+print("Error: nevermind I got bored.")
+time.sleep(1)
+print("Playing Team Fortress Two.")
+time.sleep(0.5)
+print("Stealing from your local walmart.")
+time.sleep(0.5)
+print("Eating gas station sushi.")
 print(".....")
-time.sleep(5)
-print("PREFORMING FINAL CALCULATIONS")
-print(".....")
-time.sleep(5)
-print("RESULTS CALCULATED")
-print(name, "IS", random.randint(0, 100),  "%", "GAY")
+print()
+time.sleep(1)
+os.system('clear')
+print("""
+ ░▒▓███████▓▒░  ░▒▓██████▓▒░   ░▒▓██████▓▒░  ░▒▓███████▓▒░  
+░▒▓█▓▒░        ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ 
+░▒▓█▓▒░        ░▒▓█▓▒░        ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ 
+ ░▒▓██████▓▒░  ░▒▓█▓▒░        ░▒▓████████▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ 
+       ░▒▓█▓▒░ ░▒▓█▓▒░        ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ 
+       ░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ 
+░▒▓███████▓▒░   ░▒▓██████▓▒░  ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░                                                                                                             
+""")
+print("""
+ ░▒▓██████▓▒░   ░▒▓██████▓▒░  ░▒▓██████████████▓▒░  ░▒▓███████▓▒░  ░▒▓█▓▒░        ░▒▓████████▓▒░ ░▒▓████████▓▒░ ░▒▓████████▓▒░ ░▒▓█▓▒░ 
+░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░        ░▒▓█▓▒░           ░▒▓█▓▒░     ░▒▓█▓▒░        ░▒▓█▓▒░ 
+░▒▓█▓▒░        ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░        ░▒▓█▓▒░           ░▒▓█▓▒░     ░▒▓█▓▒░        ░▒▓█▓▒░ 
+░▒▓█▓▒░        ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░ ░▒▓███████▓▒░  ░▒▓█▓▒░        ░▒▓██████▓▒░      ░▒▓█▓▒░     ░▒▓██████▓▒░   ░▒▓█▓▒░ 
+░▒▓█▓▒░        ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░        ░▒▓█▓▒░        ░▒▓█▓▒░           ░▒▓█▓▒░     ░▒▓█▓▒░        ░▒▓█▓▒░ 
+░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░        ░▒▓█▓▒░        ░▒▓█▓▒░           ░▒▓█▓▒░     ░▒▓█▓▒░                
+ ░▒▓██████▓▒░   ░▒▓██████▓▒░  ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░        ░▒▓████████▓▒░ ░▒▓████████▓▒░    ░▒▓█▓▒░     ░▒▓████████▓▒░ ░▒▓█▓▒░ 
+
+
+""")
+time.sleep(1)
+print("Please wait a sec, I need to crunch some numbers.")
+time.sleep(3)  
+print("Stuff isn't adding up, I need one more thing from you.")
+time.sleep(1)
+print()
+print(f"I should have asked you this in the beginning, but what's {name}'s gender?")
+while True:
+  gender = input("(boy/girl) ")
+  if gender.lower() == "Boy":
+    print("Ok, I'll try calculating it again with the correct infomation now.")
+    time.sleep(2)
+    os.system('clear')
+    print("Alright, the results are in.")
+    time.sleep(0.5)
+    print()
+    print(name, "is", random.randint(0, 100), "%", "gay!")
+    break
+  if gender.lower() == "boy":
+    print("Ok, I'll try calculating it again with the correct infomation now.")
+    time.sleep(2)
+    os.system('clear')
+    print("Alright, the results are in.")
+    time.sleep(0.5)
+    print()
+    print(name, "is", random.randint(0, 100), "%", "gay!")
+    break
+  if gender.lower() == "Girl":
+    print("Ok, I'll try calculating it again with the correct infomation now.")
+    time.sleep(2)
+    os.system('clear')
+    print("Alright, the results are in.")
+    time.sleep(0.5)
+    print()
+    print(name, "is", random.randint(0, 100), "%", "lesbian!")
+    break
+  if gender.lower() == "girl":
+    print("Ok, I'll try calculating it again with the correct infomation now.")
+    time.sleep(2)
+    os.system('clear')
+    print("Alright, the results are in.")
+    time.sleep(1)
+    print()
+    print(name, "is", random.randint(0, 100), "%", "lesbian!")
+    break
+  if gender.lower() == "yes":
+    print("Ok, I'll try calculating it again with the correct infomation now.")
+    time.sleep(2)
+    os.system('clear')
+    print("Alright, the results are in.")
+    time.sleep(1)
+    print()
+    print(name, "is", random.randint(0, 100), "%", "gay and lesbian somehow!")
+    break
+  if gender.lower() == "girl ":
+    print("Ok, I'll try calculating it again with the correct infomation now.")
+    time.sleep(2)
+    os.system('clear')
+    print("Alright, the results are in.")
+    time.sleep(1)
+    print()
+    print(name, "is", "100", "%", "lesbian! What, did you think it would be less?")
+    break
+  if gender.lower() == "boy ":
+    print("Ok, I'll try calculating it again with the correct infomation now.")
+    time.sleep(2)
+    os.system('clear')
+    print("Alright, the results are in.")
+    time.sleep(1)
+    print()
+    print(name, "is", "100", "%", "gay! What, did you think it would be less?")
+    break
+  if gender.lower() == " girl":
+    print("Ok, I'll try calculating it again with the correct infomation now.")
+    time.sleep(2)
+    os.system('clear')
+    print("Alright, the results are in.")
+    time.sleep(1)
+    print()
+    print(name, "is", "1000", "%", "lesbian! They've reached levels of gay not thought possible!")
+    break
+  if gender.lower() == " boy":
+    print("Ok, I'll try calculating it again with the correct infomation now.")
+    time.sleep(2)
+    os.system('clear')
+    print("Alright, the results are in.")
+    time.sleep(1)
+    print()
+    print(name, "is", "1000", "%", "gay! They've reached levels of gay not thought possible!")
+    break
+  else:
+    print(f"That's not a gender bub. What's {name}'s gender? For real this time.")
