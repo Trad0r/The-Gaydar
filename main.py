@@ -13,17 +13,15 @@ ascii_art_lines = [
   "░▒▓█▓▒▒▓███▓▒░ ░▒▓████████▓▒░  ░▒▓██████▓▒░  ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓████████▓▒░ ░▒▓███████▓▒░  ",
   "░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░    ░▒▓█▓▒░     ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ",
   "░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░    ░▒▓█▓▒░     ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ",
-  " ░▒▓██████▓▒░  ░▒▓█▓▒░░▒▓█▓▒░    ░▒▓█▓▒░     ░▒▓███████▓▒░  ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░  ",        
-  " ",    
-  " ",
+  " ░▒▓██████▓▒░  ░▒▓█▓▒░░▒▓█▓▒░    ░▒▓█▓▒░     ░▒▓███████▓▒░  ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░  ",         
   " ", 
-  "   ░▒▓█▓▒░          ░▒▓████████▓▒░          ░▒▓████████▓▒░ ",
-  "░▒▓████▓▒░          ░▒▓█▓▒░░▒▓█▓▒░          ░▒▓█▓▒░░▒▓█▓▒░ ",
-  "   ░▒▓█▓▒░          ░▒▓█▓▒░░▒▓█▓▒░          ░▒▓█▓▒░░▒▓█▓▒░ ",
-  "   ░▒▓█▓▒░          ░▒▓█▓▒░░▒▓█▓▒░          ░▒▓█▓▒░░▒▓█▓▒░ ",
-  "   ░▒▓█▓▒░          ░▒▓█▓▒░░▒▓█▓▒░          ░▒▓█▓▒░░▒▓█▓▒░ ",
-  "   ░▒▓█▓▒░ ░▒▓██▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓██▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ",
-  "   ░▒▓█▓▒░ ░▒▓██▓▒░ ░▒▓████████▓▒░ ░▒▓██▓▒░ ░▒▓████████▓▒░ ",
+  "   ░▒▓█▓▒░      ░▒▓█▓▒░      ░▒▓███████▓▒░  ",
+  "░▒▓████▓▒░   ░▒▓████▓▒░             ░▒▓█▓▒░ ",
+  "   ░▒▓█▓▒░      ░▒▓█▓▒░             ░▒▓█▓▒░ ",
+  "   ░▒▓█▓▒░      ░▒▓█▓▒░       ░▒▓██████▓▒░  ",
+  "   ░▒▓█▓▒░      ░▒▓█▓▒░      ░▒▓█▓▒░       ",
+  "   ░▒▓█▓▒░▒▓██▓▒░▒▓█▓▒░▒▓██▓▒░▒▓█▓▒░       ",
+  "   ░▒▓█▓▒░▒▓██▓▒░▒▓█▓▒░▒▓██▓▒░▒▓████████▓▒░ ",
 
 ]            
 
@@ -32,7 +30,7 @@ for line in ascii_art_lines:
   time.sleep(0.1)
 time.sleep(0.5)
 print()
-print("You are using a pre-release version of GAYDAR! Expect bugs.")
+print("Welcome to GAYDAR! Let's get things stared for you.")
 print()
 print("Activating GAYDAR...")
 print()
@@ -50,27 +48,28 @@ while True:
   print(f"Just to be sure, do you want to target {name}?")
   confirm = input("(y/n) ")
   print()
-
-  if confirm.lower() == "Y":
-    os.system('clear')
-    ascii_art_lines = [
-      " ░▒▓███████▓▒░  ░▒▓██████▓▒░   ░▒▓██████▓▒░  ░▒▓███████▓▒░  ░▒▓███████▓▒░  ░▒▓█▓▒░ ░▒▓███████▓▒░   ░▒▓██████▓▒░                             ",
-      "░▒▓█▓▒░        ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░                            ",
-      "░▒▓█▓▒░        ░▒▓█▓▒░        ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░                                   ",
-      " ░▒▓██████▓▒░  ░▒▓█▓▒░        ░▒▓████████▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒▒▓███▓▒░                            ",
-      "       ░▒▓█▓▒░ ░▒▓█▓▒░        ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░                            ",
-      "       ░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓██▓▒░ ░▒▓██▓▒░ ░▒▓██▓▒░ ",
-      "░▒▓███████▓▒░   ░▒▓██████▓▒░  ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░  ░▒▓██████▓▒░  ░▒▓██▓▒░ ░▒▓██▓▒░ ░▒▓██▓▒░ ",
-
-
-]
-  for line in ascii_art_lines:
-    print(line)
-    time.sleep(0.1)
-    break
   if confirm.lower() == "y":
-    os.system('clear')
-    ascii_art_lines = [
+    print()
+    time.sleep(0.1)
+    print()
+    time.sleep(0.1)
+    print()
+    time.sleep(0.1)
+    print()
+    time.sleep(0.1)
+    print()
+    time.sleep(0.1)
+    print()
+    time.sleep(0.1)
+    print()
+    time.sleep(0.1)
+    print()
+    time.sleep(0.1)
+    print()
+    time.sleep(0.1)
+    print()
+    time.sleep(0.1)
+    ascii_art_lines = [ 
       " ░▒▓███████▓▒░  ░▒▓██████▓▒░   ░▒▓██████▓▒░  ░▒▓███████▓▒░  ░▒▓███████▓▒░  ░▒▓█▓▒░ ░▒▓███████▓▒░   ░▒▓██████▓▒░                             ",
       "░▒▓█▓▒░        ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░                            ",
       "░▒▓█▓▒░        ░▒▓█▓▒░        ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░                                   ",
@@ -78,8 +77,6 @@ while True:
       "       ░▒▓█▓▒░ ░▒▓█▓▒░        ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░                            ",
       "       ░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓██▓▒░ ░▒▓██▓▒░ ░▒▓██▓▒░ ",
       "░▒▓███████▓▒░   ░▒▓██████▓▒░  ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░  ░▒▓██████▓▒░  ░▒▓██▓▒░ ░▒▓██▓▒░ ░▒▓██▓▒░ ",
-
-
     ]
     for line in ascii_art_lines:
       print(line)
@@ -161,7 +158,26 @@ print("Eating gas station sushi.")
 print(".....")
 print()
 time.sleep(1)
-os.system('clear')
+print()
+time.sleep(0.1)
+print()
+time.sleep(0.1)
+print()
+time.sleep(0.1)
+print()
+time.sleep(0.1)
+print()
+time.sleep(0.1)
+print()
+time.sleep(0.1)
+print()
+time.sleep(0.1)
+print()
+time.sleep(0.1)
+print()
+time.sleep(0.1)
+print()
+time.sleep(0.1)
 #line too long? nah, you can never have it too long.
 ascii_art_lines = [
   "  ░▒▓███████▓▒░  ░▒▓██████▓▒░   ░▒▓██████▓▒░  ░▒▓███████▓▒░  ",
@@ -187,6 +203,7 @@ for line in ascii_art_lines:
   time.sleep(0.1)
 
 time.sleep(1)
+print()
 print("Please wait a sec, I need to crunch some numbers.")
 time.sleep(3)  
 print("Stuff isn't adding up, I need one more thing from you.")
@@ -199,7 +216,11 @@ while True:
   if gender.lower() == "Boy":
     print("Ok, I'll try calculating it again with the correct infomation now.")
     time.sleep(2)
-    os.system('clear')
+    print()
+    print()
+    print()
+    print()
+    print()
     print("Alright, the results are in.")
     time.sleep(0.5)
     print()
@@ -208,7 +229,11 @@ while True:
   if gender.lower() == "boy":
     print("Ok, I'll try calculating it again with the correct infomation now.")
     time.sleep(2)
-    os.system('clear')
+    print()
+    print()
+    print()
+    print()
+    print()
     print("Alright, the results are in.")
     time.sleep(0.5)
     print()
@@ -217,7 +242,11 @@ while True:
   if gender.lower() == "Girl":
     print("Ok, I'll try calculating it again with the correct infomation now.")
     time.sleep(2)
-    os.system('clear')
+    print()
+    print()
+    print()
+    print()
+    print()
     print("Alright, the results are in.")
     time.sleep(0.5)
     print()
@@ -226,7 +255,11 @@ while True:
   if gender.lower() == "girl":
     print("Ok, I'll try calculating it again with the correct infomation now.")
     time.sleep(2)
-    os.system('clear')
+    print()
+    print()
+    print()
+    print()
+    print()
     print("Alright, the results are in.")
     time.sleep(1)
     print()
@@ -235,7 +268,11 @@ while True:
   if gender.lower() == "yes":
     print("Ok, I'll try calculating it again with the correct infomation now.")
     time.sleep(2)
-    os.system('clear')
+    print()
+    print()
+    print()
+    print()
+    print()
     print("Alright, the results are in.")
     time.sleep(1)
     print()
@@ -244,7 +281,11 @@ while True:
   if gender.lower() == "girl ":
     print("Ok, I'll try calculating it again with the correct infomation now.")
     time.sleep(2)
-    os.system('clear')
+    print()
+    print()
+    print()
+    print()
+    print()
     print("Alright, the results are in.")
     time.sleep(1)
     print()
@@ -253,7 +294,11 @@ while True:
   if gender.lower() == "boy ":
     print("Ok, I'll try calculating it again with the correct infomation now.")
     time.sleep(2)
-    os.system('clear')
+    print()
+    print()
+    print()
+    print()
+    print()
     print("Alright, the results are in.")
     time.sleep(1)
     print()
@@ -262,7 +307,11 @@ while True:
   if gender.lower() == " girl":
     print("Ok, I'll try calculating it again with the correct infomation now.")
     time.sleep(2)
-    os.system('clear')
+    print()
+    print()
+    print()
+    print()
+    print()
     print("Alright, the results are in.")
     time.sleep(1)
     print()
@@ -271,7 +320,11 @@ while True:
   if gender.lower() == " boy":
     print("Ok, I'll try calculating it again with the correct infomation now.")
     time.sleep(2)
-    os.system('clear')
+    print()
+    print()
+    print()
+    print()
+    print()
     print("Alright, the results are in.")
     time.sleep(1)
     print()
