@@ -7,21 +7,21 @@ import os
 os.system('clear')
 #it took so long to make this stuff appear line by line it's not even funny  -.-
 ascii_art_lines = [
-  " ░▒▓██████▓▒░   ░▒▓██████▓▒░  ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓███████▓▒░   ░▒▓██████▓▒░  ░▒▓███████▓▒░  ",
-  "░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ",
-  "░▒▓█▓▒░        ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ",
-  "░▒▓█▓▒▒▓███▓▒░ ░▒▓████████▓▒░  ░▒▓██████▓▒░  ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓████████▓▒░ ░▒▓███████▓▒░  ",
-  "░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░    ░▒▓█▓▒░     ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ",
-  "░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░    ░▒▓█▓▒░     ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ",
-  " ░▒▓██████▓▒░  ░▒▓█▓▒░░▒▓█▓▒░    ░▒▓█▓▒░     ░▒▓███████▓▒░  ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░  ",         
+  "   ░▒▓██████▓▒░   ░▒▓██████▓▒░  ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓███████▓▒░   ░▒▓██████▓▒░  ░▒▓███████▓▒░  ",
+  "  ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ",
+  "  ░▒▓█▓▒░        ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ",
+  "  ░▒▓█▓▒▒▓███▓▒░ ░▒▓████████▓▒░  ░▒▓██████▓▒░  ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓████████▓▒░ ░▒▓███████▓▒░  ",
+  "  ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░    ░▒▓█▓▒░     ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ",
+  "  ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░    ░▒▓█▓▒░     ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ",
+  "   ░▒▓██████▓▒░  ░▒▓█▓▒░░▒▓█▓▒░    ░▒▓█▓▒░     ░▒▓███████▓▒░  ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░  ",
   " ", 
-  "   ░▒▓█▓▒░      ░▒▓█▓▒░      ░▒▓███████▓▒░  ",
-  "░▒▓████▓▒░   ░▒▓████▓▒░             ░▒▓█▓▒░ ",
-  "   ░▒▓█▓▒░      ░▒▓█▓▒░             ░▒▓█▓▒░ ",
-  "   ░▒▓█▓▒░      ░▒▓█▓▒░       ░▒▓██████▓▒░  ",
-  "   ░▒▓█▓▒░      ░▒▓█▓▒░      ░▒▓█▓▒░       ",
-  "   ░▒▓█▓▒░▒▓██▓▒░▒▓█▓▒░▒▓██▓▒░▒▓█▓▒░       ",
-  "   ░▒▓█▓▒░▒▓██▓▒░▒▓█▓▒░▒▓██▓▒░▒▓████████▓▒░ ",
+  "     ░▒▓█▓▒░      ░▒▓█▓▒░      ░▒▓███████▓▒░  ",
+  "  ░▒▓████▓▒░   ░▒▓████▓▒░             ░▒▓█▓▒░ ",
+  "     ░▒▓█▓▒░      ░▒▓█▓▒░             ░▒▓█▓▒░ ",
+  "     ░▒▓█▓▒░      ░▒▓█▓▒░       ░▒▓██████▓▒░  ",
+  "     ░▒▓█▓▒░      ░▒▓█▓▒░      ░▒▓█▓▒░       ",
+  "     ░▒▓█▓▒░▒▓██▓▒░▒▓█▓▒░▒▓██▓▒░▒▓█▓▒░       ",
+  "     ░▒▓█▓▒░▒▓██▓▒░▒▓█▓▒░▒▓██▓▒░▒▓████████▓▒░ ",
 
 ]            
 
@@ -207,6 +207,10 @@ print()
 print("Please wait a sec, I need to crunch some numbers.")
 time.sleep(3)  
 print("Stuff isn't adding up, I need one more thing from you.")
+#i discovered that ? = ? exists so i can make this way easier to add new genders
+num = random.randint(0, 100)
+#nevermind i made it more complicated :)
+#and.... it's broken. dang.
 time.sleep(1)
 print()
 print(f"I should have asked you this in the beginning, but what's {name}'s gender?")
@@ -224,8 +228,15 @@ while True:
     print("Alright, the results are in.")
     time.sleep(0.5)
     print()
-    print(name, "is", random.randint(0, 100), "%", "gay!")
-    break
+    #just realized i could have just used else instead of >
+    #pretty sure i need to use else because this crap won't work if i use >
+    if (num) == 100:
+      #it won't work regardless anyway LMAO
+      print(f"{name} is {num}% gay! They passed the test with flying colors!")
+      break
+    else:
+      print(f"{name} is {num}% gay!")
+      break
   if gender.lower() == "boy":
     print("Ok, I'll try calculating it again with the correct infomation now.")
     time.sleep(2)
@@ -237,8 +248,12 @@ while True:
     print("Alright, the results are in.")
     time.sleep(0.5)
     print()
-    print(name, "is", random.randint(0, 100), "%", "gay!")
-    break
+    if (num) == 100:
+      print(f"{name} is {num}% gay! They passed the test with flying colors!")
+      break
+    else:
+      print(f"{name} is {num}% gay!")
+      break
   if gender.lower() == "Girl":
     print("Ok, I'll try calculating it again with the correct infomation now.")
     time.sleep(2)
@@ -250,8 +265,12 @@ while True:
     print("Alright, the results are in.")
     time.sleep(0.5)
     print()
-    print(name, "is", random.randint(0, 100), "%", "lesbian!")
-    break
+    if (num) == 100:
+      print(f"{name} is {num}% lesbian! They passed the test with flying colors!")
+      break
+    else:
+      print(f"{name} is {num}% lesbian!")
+      break
   if gender.lower() == "girl":
     print("Ok, I'll try calculating it again with the correct infomation now.")
     time.sleep(2)
@@ -263,8 +282,12 @@ while True:
     print("Alright, the results are in.")
     time.sleep(1)
     print()
-    print(name, "is", random.randint(0, 100), "%", "lesbian!")
-    break
+    if (num) == 100:
+      print(f"{name} is {num}% lesbian! They passed the test with flying colors!")
+      break
+    else:
+      print(f"{name} is {num}% lesbian!")
+      break
   if gender.lower() == "yes":
     print("Ok, I'll try calculating it again with the correct infomation now.")
     time.sleep(2)
@@ -276,8 +299,12 @@ while True:
     print("Alright, the results are in.")
     time.sleep(1)
     print()
-    print(name, "is", random.randint(0, 100), "%", "gay and lesbian somehow!")
-    break
+    if (num) == 100:
+      print(f"{name} is {num}% gay and lesbian somehow! They passed the test with flying colors!")
+      break
+    else:
+      print(f"{name} is {num}% gay and lesbian somehow!")
+      break
   if gender.lower() == "girl ":
     print("Ok, I'll try calculating it again with the correct infomation now.")
     time.sleep(2)
@@ -289,7 +316,7 @@ while True:
     print("Alright, the results are in.")
     time.sleep(1)
     print()
-    print(name, "is", "100", "%", "lesbian! Looks like they passed the test with flying colors!")
+    print(name, "is", "100", "%", "lesbian! What, did you expect anything less?")
     break
   if gender.lower() == "boy ":
     print("Ok, I'll try calculating it again with the correct infomation now.")
@@ -302,7 +329,7 @@ while True:
     print("Alright, the results are in.")
     time.sleep(1)
     print()
-    print(name, "is", "100", "%", "gay! Looks like they passed the test with flying colors!")
+    print(name, "is", "100", "%", "lesbian! What, did you expect anything less?")
     break
   if gender.lower() == " girl":
     print("Ok, I'll try calculating it again with the correct infomation now.")
@@ -330,5 +357,24 @@ while True:
     print()
     print(name, "is", "1000", "%", "gay! They've reached levels of gay not thought possible!")
     break
+  #i wonder why this part doesn't work...
+  if gender.lower() == "No":
+    print("Ok, I'll try calculating it again with the correct infomation now.")
+    time.sleep(2)
+    print()
+    print()
+    print()
+    print()
+    print()
+    print("Alright, the results are in.")
+    time.sleep(0.5)
+    print()
+    print(f"{name} is {num}%... Wait... How is this going to work? Uhhh...")
+    time.sleep(1)
+    print("Sorry, I'm just a bit confused...")
+    time.sleep(0.5)
+    Warning("Yeah that's an error. Sorry, but I just don't know.")
+    break
   else:
     print(f"That's not a gender bub. What's {name}'s gender? For real this time.")
+    #after break, let's add a continue option, that way you can scan more people without reruning the code.
