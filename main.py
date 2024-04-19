@@ -10,7 +10,7 @@ num = random.randint(0, 100)
 #if you don't i swear to god
 #i will find you
 os.system('clear')
-#it took so long to make this stuff appear line by line it's not even funny  -.-
+#it took so long to make this stuff appear line by line it's not even funny
 ascii_art_lines = [
   "   ░▒▓██████▓▒░   ░▒▓██████▓▒░  ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓███████▓▒░   ░▒▓██████▓▒░  ░▒▓███████▓▒░  ",
   "  ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ",
@@ -188,7 +188,6 @@ print()
 time.sleep(0.1)
 print()
 time.sleep(0.1)
-#line too long? nah, you can never have it too long.
 ascii_art_lines = [
   "  ░▒▓███████▓▒░  ░▒▓██████▓▒░   ░▒▓██████▓▒░  ░▒▓███████▓▒░  ",
   " ░▒▓█▓▒░        ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ ",
@@ -220,9 +219,6 @@ print("Stuff isn't adding up, I need one more thing from you.")
 time.sleep(1)
 print()
 print(f"I should have asked you this in the beginning, but what's {name}'s gender?")
-#TO DO: Make it so GAYDAR dumps the name and the result to a log so we can give people
-#the same numbers if they enter the same name.
-
 #this could be optimized... but i'm too lazy to mess with the spaghetti that's here now.
 while True:
   gender = input("(boy/girl) ")
@@ -241,10 +237,7 @@ while True:
     print("Alright, the results are in.")
     time.sleep(0.5)
     print()
-    #just realized i could have just used else instead of >
-    #pretty sure i need to use else because this crap won't work if i use >
     if (num) == 100:
-      #it won't work regardless anyway LMAO
       print(f"{name} is {num}% gay! They passed the test with flying colors!")
       break
     else:
@@ -399,7 +392,6 @@ while True:
     print()
     print(f"{name} is 1000% gay! They've reached levels of gay not thought possible!")
     break
-  #i wonder why this part doesn't work...
   if gender.lower() == "no":
     logger.info(f'Name = {name}')
     logger.info('Result = ERROR%')

@@ -3,7 +3,7 @@ Hey guys!
 In 1.0.1 I have accomplished something huge.
 GAYDAR now dumps results to a file named pain.log, allowing you to check if you've already scanned a person without needing to sit through the scanning process again!
 Thanks for waiting for so long, I'm dumb so it took awhile to implement something that's this simple.
-Next update, I plan on moving the gender input to the beginning, and cleaning up the spaghetti.
+Next update, I plan on moving the gender input to the beginning, cleaning up the spaghetti, and adding a continue function so you can scan more people without reruning the program.
 
 Old README:
 A little coded thingy I made while bored in class to make fun of my friends. And now you can too!
