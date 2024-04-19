@@ -1,6 +1,11 @@
 import time
 import random
 import os
+import logging
+logger = logging.getLogger(__name__)
+logging.basicConfig(filename='pain.log', encoding='utf-8', level=logging.DEBUG)
+#i discovered how to do this so i can make it way easier to rig the results
+num = random.randint(0, 100)
 #PLEASE git push to 1.0.1 when making changes andrew
 #if you don't i swear to god
 #i will find you
@@ -41,14 +46,19 @@ print()
 time.sleep(3)
 print(random.randint(1, 10000), "possible targets found.")
 print()
-
 while True:
   print("Who would you like to target?")
-  name = input()
+  name = input("(name): ")
   print(f"Just to be sure, do you want to target {name}?")
-  confirm = input("(y/n) ")
+  confirm = input("(y/n): ")
   print()
   if confirm.lower() == "y":
+    print("GAYDAR Tip: If you don't want to wait for the scanning process to finish, check the file named 'pain.log'.")
+    time.sleep(0.5)
+    print("The GAYDAR automatically prints all the names and results of people that have been already scanned.")
+    time.sleep(1)
+    print("Auto-continuing in 3 seconds...")
+    time.sleep(3)
     print()
     time.sleep(0.1)
     print()
@@ -134,7 +144,7 @@ print("Attempting a manual override on the wall.")
 time.sleep(0.5)
 print("Getting a divorce.")
 time.sleep(0.5)
-print("Playing osu.")
+print("Taking back the creek.")
 time.sleep(0.5)
 print("Turning it off an back on again.")
 time.sleep(0.5)
@@ -207,17 +217,20 @@ print()
 print("Please wait a sec, I need to crunch some numbers.")
 time.sleep(3)  
 print("Stuff isn't adding up, I need one more thing from you.")
-#i discovered that ? = ? exists so i can make this way easier to add new genders
-num = random.randint(0, 100)
-#nevermind i made it more complicated :)
-#and.... it's broken. dang.
 time.sleep(1)
 print()
 print(f"I should have asked you this in the beginning, but what's {name}'s gender?")
+#TO DO: Make it so GAYDAR dumps the name and the result to a log so we can give people
+#the same numbers if they enter the same name.
+
 #this could be optimized... but i'm too lazy to mess with the spaghetti that's here now.
 while True:
   gender = input("(boy/girl) ")
   if gender.lower() == "Boy":
+    logger.info(f'Name = {name}')
+    logger.info(f'Result = {num}%')
+    logger.info(f'Gender = {gender}')
+    logger.info('----------')
     print("Ok, I'll try calculating it again with the correct infomation now.")
     time.sleep(2)
     print()
@@ -238,6 +251,10 @@ while True:
       print(f"{name} is {num}% gay!")
       break
   if gender.lower() == "boy":
+    logger.info(f'Name = {name}')
+    logger.info(f'Result = {num}%')
+    logger.info(f'Gender = {gender}')
+    logger.info('----------')
     print("Ok, I'll try calculating it again with the correct infomation now.")
     time.sleep(2)
     print()
@@ -255,6 +272,10 @@ while True:
       print(f"{name} is {num}% gay!")
       break
   if gender.lower() == "Girl":
+    logger.info(f'Name = {name}')
+    logger.info(f'Result = {num}%')
+    logger.info(f'Gender = {gender}')
+    logger.info('----------')
     print("Ok, I'll try calculating it again with the correct infomation now.")
     time.sleep(2)
     print()
@@ -289,6 +310,10 @@ while True:
       print(f"{name} is {num}% lesbian!")
       break
   if gender.lower() == "yes":
+    logger.info(f'Name = {name}')
+    logger.info(f'Result = {num}%')
+    logger.info(f'Gender = {gender}')
+    logger.info('----------')
     print("Ok, I'll try calculating it again with the correct infomation now.")
     time.sleep(2)
     print()
@@ -306,19 +331,28 @@ while True:
       print(f"{name} is {num}% gay and lesbian somehow!")
       break
   if gender.lower() == "girl ":
+    logger.info(f'Name = {name}')
+    logger.info('Result = 100%')
+    logger.info(f'Gender = {gender}')
+    logger.info('----------')
     print("Ok, I'll try calculating it again with the correct infomation now.")
     time.sleep(2)
     print()
     print()
+    #hi
     print()
     print()
     print()
     print("Alright, the results are in.")
     time.sleep(1)
     print()
-    print(name, "is", "100", "%", "lesbian! What, did you expect anything less?")
+    print(f"{name} is 100% lesbian! What, did you expect anything less?")
     break
   if gender.lower() == "boy ":
+    logger.info(f'Name = {name}')
+    logger.info('Result = 100%')
+    logger.info(f'Gender = {gender}')
+    logger.info('----------')
     print("Ok, I'll try calculating it again with the correct infomation now.")
     time.sleep(2)
     print()
@@ -329,9 +363,13 @@ while True:
     print("Alright, the results are in.")
     time.sleep(1)
     print()
-    print(name, "is", "100", "%", "lesbian! What, did you expect anything less?")
+    print(f"{name} is 100% gay! What, did you expect anything less?")
     break
   if gender.lower() == " girl":
+    logger.info(f'Name = {name}')
+    logger.info('Result = 1000%')
+    logger.info(f'Gender = {gender}')
+    logger.info('----------')
     print("Ok, I'll try calculating it again with the correct infomation now.")
     time.sleep(2)
     print()
@@ -342,9 +380,13 @@ while True:
     print("Alright, the results are in.")
     time.sleep(1)
     print()
-    print(name, "is", "1000", "%", "lesbian! They've reached levels of gay not thought possible!")
+    print(f"{name} is 1000% lesbian! They've reached levels of gay not thought possible!")
     break
   if gender.lower() == " boy":
+    logger.info(f'Name = {name}')
+    logger.info('Result = 1000%')
+    logger.info(f'Gender = {gender}')
+    logger.info('----------')
     print("Ok, I'll try calculating it again with the correct infomation now.")
     time.sleep(2)
     print()
@@ -355,10 +397,14 @@ while True:
     print("Alright, the results are in.")
     time.sleep(1)
     print()
-    print(name, "is", "1000", "%", "gay! They've reached levels of gay not thought possible!")
+    print(f"{name} is 1000% gay! They've reached levels of gay not thought possible!")
     break
   #i wonder why this part doesn't work...
   if gender.lower() == "no":
+    logger.info(f'Name = {name}')
+    logger.info('Result = ERROR%')
+    logger.info(f'Gender = {gender}')
+    logger.info('----------')
     print("Ok, I'll try calculating it again with the correct infomation now.")
     time.sleep(2)
     print()
@@ -372,9 +418,10 @@ while True:
     print(f"{name} is {num}% ga- Uh, les- Wait, what?")
     time.sleep(1)
     print("What do you mean?")
-    time.sleep(1)
+    time.sleep(2)
     print("What do you mean no?")
     time.sleep(3)
+    print()
     print("Error: GAYDAR Module 1, 4, and 7 threw a fatal error!")
     time.sleep(0.5)
     print("Fallback order: GAYDAR (Experimental), GAYDAR Helper, GAYDAR Helper (Experimental)")
@@ -396,4 +443,5 @@ while True:
     break
   else:
     print(f"That's not a gender bub. What's {name}'s gender? For real this time.")
-    #after break, let's add a continue option, that way you can scan more people without reruning the code.
+    #after break, let's add a continue option, that way you can scan more people without
+    #reruning the code.
