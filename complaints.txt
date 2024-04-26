@@ -1,0 +1,7 @@
+print(random_line('whatever.txt'))
+use this for all the loading text.
+replace the word "whatever" with the name of the file.
+i implmented this at like 3 am so it might not work
+
+lines 229 - 442 absoultely suck, we really need to clean that up somehow
+maybe we could put everything into a varible or something

@@ -5,6 +5,11 @@ import sys
 import logging
 logger = logging.getLogger(__name__)
 logging.basicConfig(filename='pain.log', encoding='utf-8', level=logging.DEBUG)
+#i can make the loading text pull randomly from a file now! horray!
+def random_line(fname):
+  lines = open(fname).read().splitlines()
+  return random.choice(lines)
+print(random_line('load.txt'))
 #i discovered how to do this so i can make it way easier to rig the results
 num = random.randint(0, 100)
 #PLEASE git push to 1.0.1 when making changes andrew
@@ -41,12 +46,21 @@ print()
 print("Welcome to GAYDAR! Let's get things stared for you.")
 print()
 print("Activating GAYDAR...")
+text = "░▒▒▓██████████████████████▓▒▒░"
+for char in text:
+    sys.stdout.write(char)
+    sys.stdout.flush()
+    time.sleep(0.1)
 print()
 time.sleep(3)
 print("GAYDAR Activated!")
 print("Scanning for targets...")
+text = "░▒▒▓██████████████████████▓▒▒░"
+for char in text:
+    sys.stdout.write(char)
+    sys.stdout.flush()
+    time.sleep(0.1)
 print()
-time.sleep(3)
 print(random.randint(1, 10000), "possible targets found.")
 print()
 while True:
@@ -56,122 +70,84 @@ while True:
   confirm = input("(y/n): ")
   print()
   if confirm.lower() == "y":
-    print("GAYDAR Tip: If you don't want to wait for the scanning process to finish, check the file named 'pain.log'.")
-    time.sleep(0.5)
-    print("The GAYDAR automatically prints all the names and results of people that have been already scanned.")
-    time.sleep(1)
-    print("Auto-continuing in 3 seconds...")
-    time.sleep(3)
-    print()
-    time.sleep(0.1)
-    print()
-    time.sleep(0.1)
-    print()
-    time.sleep(0.1)
-    print()
-    time.sleep(0.1)
-    print()
-    time.sleep(0.1)
-    print()
-    time.sleep(0.1)
-    print()
-    time.sleep(0.1)
-    print()
-    time.sleep(0.1)
-    print()
-    time.sleep(0.1)
-    print()
-    time.sleep(0.1)
-    ascii_art_lines = [ 
-    "    /$$$$$$                                          /$$                               ", 
-       "/$$__  $$                                        |__/                                ",
-      "| $$  \__/  /$$$$$$$  /$$$$$$  /$$$$$$$  /$$$$$$$  /$$ /$$$$$$$   /$$$$$$            " ,
-      "|  $$$$$$  /$$_____/ |____  $$| $$__  $$| $$__  $$| $$| $$__  $$ /$$__  $$            ",
-      " \____  $$| $$        /$$$$$$$| $$  \ $$| $$  \ $$| $$| $$  \ $$| $$  \ $$            ",
-      " /$$  \ $$| $$       /$$__  $$| $$  | $$| $$  | $$| $$| $$  | $$| $$  | $$            ",
-      "|  $$$$$$/|  $$$$$$$|  $$$$$$$| $$  | $$| $$  | $$| $$| $$  | $$|  $$$$$$$ /$$ /$$ /$$",
-      " \______/  \_______/ \_______/|__/  |__/|__/  |__/|__/|__/  |__/ \____  $$|__/|__/|__/",
-      "                                                                 /$$  \ $$            "
-      "                                                                |  $$$$$$/            "
-      "                                                                 \______/             "
-    ]
-    for line in ascii_art_lines:
-      print(line)
-      time.sleep(0.1)
     break
   else:
     print("Ok then.")
-#it took way too long to type this loading text out
-#like two days too long
+os.system('clear')
+time.sleep(0.1)
 print()
-time.sleep(1)
-print("Baking a cake.")
+time.sleep(0.1)
+print()
+time.sleep(0.1)
+print()
+time.sleep(0.1)
+print()
+time.sleep(0.1)
+print()
+time.sleep(0.1)
+print()
+time.sleep(0.1)
+print()
+time.sleep(0.1)
+print()
+time.sleep(0.1)
+print()
+time.sleep(0.1)
+ascii_art_lines = [ 
+  "  /$$$$$$                                          /$$                               ", 
+  " /$$__  $$                                        |__/                                ",
+  "| $$  \__/  /$$$$$$$  /$$$$$$  /$$$$$$$  /$$$$$$$  /$$ /$$$$$$$   /$$$$$$            " ,
+  "|  $$$$$$  /$$_____/ |____  $$| $$__  $$| $$__  $$| $$| $$__  $$ /$$__  $$            ",
+  " \____  $$| $$        /$$$$$$$| $$  \ $$| $$  \ $$| $$| $$  \ $$| $$  \ $$            ",
+  " /$$  \ $$| $$       /$$__  $$| $$  | $$| $$  | $$| $$| $$  | $$| $$  | $$            ",
+  "|  $$$$$$/|  $$$$$$$|  $$$$$$$| $$  | $$| $$  | $$| $$| $$  | $$|  $$$$$$$ /$$ /$$ /$$",
+  " \______/  \_______/ \_______/|__/  |__/|__/  |__/|__/|__/  |__/ \____  $$|__/|__/|__/",
+  "                                                                 /$$  \ $$            ",
+  "                                                                |  $$$$$$/            ",
+  "                                                                 \______/             ",
+]
+for line in ascii_art_lines:
+  print(line)
+  time.sleep(0.1)
+print()
+print(random_line('load.txt'))
+time.sleep(0.7)
+print(random_line('load.txt'))
+time.sleep(0.7)
+print(random_line('load.txt'))
+time.sleep(0.7)
+print(random_line('load.txt'))
+time.sleep(0.7)
+print(random_line('load.txt'))
+time.sleep(0.7)
+print(random_line('load.txt'))
+time.sleep(0.7)
+print(random_line('load.txt'))
+time.sleep(0.7)
+print(random_line('load.txt'))
+time.sleep(0.7)
+print(random_line('load.txt'))
+time.sleep(0.7)
+print(random_line('load.txt'))
+time.sleep(0.7)
+print(random_line('load.txt'))
+time.sleep(0.7)
+print(random_line('load.txt'))
+time.sleep(0.7)
+print(random_line('load.txt'))
+time.sleep(0.7)
+print(random_line('load.txt'))
+time.sleep(0.7)
+print(random_line('load.txt'))
+time.sleep(0.7)
+print(random_line('load.txt'))
+time.sleep(0.7)
+print(random_line('load.txt'))
+time.sleep(0.7)
+print(random_line('load.txt'))
+time.sleep(0.7)
+print(random_line('load.txt'))
 time.sleep(0.5)
-print("Finding friends...")
-time.sleep(2)
-print("Error: value can't be zero!")
-time.sleep(1)
-print("Taking happy pills.")
-time.sleep(0.5)
-print("Legalizing nuclear bombs.")
-time.sleep(0.5)
-print("Hacking the mainframe.")
-time.sleep(0.5)
-print("Fighting third graders.")
-time.sleep(0.5)
-print("Finding father...")
-time.sleep(2)
-print("Error: can't find something that doesn't exist!")
-time.sleep(1)
-print("Having existential crisis.")
-time.sleep(0.5)
-print("Finishing what Bin Laden started.")
-time.sleep(0.5)
-print("Checking search history.")
-time.sleep(0.5)
-print("Bleaching eyes.")
-time.sleep(0.5)
-print("Preparing for titanfall.")
-time.sleep(0.5)
-print("Checking for brain wrinkles...")
-time.sleep(2)
-print("Smooth brain detected! Cutting corners.")
-time.sleep(1)
-print("Removing human rights.")
-time.sleep(0.5)
-print("Listening to the chiki's chase soundtrack on loop.")
-time.sleep(0.5)
-print("Burning down the house.")
-time.sleep(0.5)
-print("Staying up til midnight.")
-time.sleep(0.5)
-print("Bringing death to the MPLA.")
-time.sleep(0.5)
-print("Attempting a manual override on the wall.")
-time.sleep(0.5)
-print("Getting a divorce.")
-time.sleep(0.5)
-print("Taking back the creek.")
-time.sleep(0.5)
-print("Turning it off an back on again.")
-time.sleep(0.5)
-print("Finding who asked...")
-time.sleep(2)
-print("Oh my god, we found him!")
-time.sleep(1)
-print("Checking if a throw is our only option.")
-time.sleep(0.5)
-print("Spreading democracy across the galaxy.")
-time.sleep(0.5)
-print("Doing homework...")
-time.sleep(2)
-print("Error: nevermind I got bored.")
-time.sleep(1)
-print("Playing Team Fortress Two.")
-time.sleep(0.5)
-print("Stealing from your local walmart.")
-time.sleep(0.5)
-print("Eating gas station sushi.")
 print(".....")
 print()
 time.sleep(1)
@@ -197,7 +173,7 @@ print()
 time.sleep(0.1)
 ascii_art_lines = [
 
- "   /$$$$$$                                                                         ",
+  "  /$$$$$$                                                                         ",
   " /$$__  $$                                                                        ",
   "| $$  \__/  /$$$$$$$  /$$$$$$  /$$$$$$$                                           ",
   "|  $$$$$$  /$$_____/ |____  $$| $$__  $$                                          ",
@@ -231,7 +207,7 @@ text = "░▒▒▓████████████████████
 for char in text:
     sys.stdout.write(char)
     sys.stdout.flush()
-    time.sleep(0.2)
+    time.sleep(0.1)
 print()
 print()
 print("Stuff isn't adding up, I need one more thing from you.")
