@@ -4,4 +4,9 @@ replace the word "whatever" with the name of the file.
 i implmented this at like 3 am so it might not work
 
 lines 229 - 442 absoultely suck, we really need to clean that up somehow
-maybe we could put everything into a varible or something
+maybe we could put everything into a varible and just paste it into every thing
+i've updated it so it now uses 'or', clearing two of the big blocks of spaghetti
+because of this empty space, i've added a special statement that happens when you get a score above 50 but
+still not 100.
+
+i find a way to get lines 17 - 19 to work so i can block user input until needed

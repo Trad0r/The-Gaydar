@@ -10,9 +10,16 @@ def random_line(fname):
   lines = open(fname).read().splitlines()
   return random.choice(lines)
 print(random_line('load.txt'))
+t = time.localtime(time.time())
+localtime = time.asctime(t)
+#i wanna print the current time cuz y'know, why not?
 #i discovered how to do this so i can make it way easier to rig the results
 num = random.randint(0, 100)
-#PLEASE git push to 1.0.1 when making changes andrew
+stdin_backup = sys.stdin        
+devnull = open(os.devnull, 'w')  
+#i stole this code from stackoverflow lol
+sys.stdin = devnull
+#PLEASE git push to 1.0.2 when making changes andrew
 #if you don't i swear to god
 #i will find you
 os.system('clear')
@@ -43,7 +50,9 @@ for line in ascii_art_lines:
   time.sleep(0.1)
 time.sleep(0.5)
 print()
-print("Welcome to GAYDAR! Let's get things stared for you.")
+print("Welcome to GAYDAR!")
+print(f"The current time and date is {localtime}")
+print("Let's get things stared for you.")
 print()
 print("Activating GAYDAR...")
 text = "░▒▒▓██████████████████████▓▒▒░"
@@ -52,7 +61,6 @@ for char in text:
     sys.stdout.flush()
     time.sleep(0.1)
 print()
-time.sleep(3)
 print("GAYDAR Activated!")
 print("Scanning for targets...")
 text = "░▒▒▓██████████████████████▓▒▒░"
@@ -64,6 +72,7 @@ print()
 print(random.randint(1, 10000), "possible targets found.")
 print()
 while True:
+  sys.stdin = stdin_backup
   print("Who would you like to target?")
   name = input("(name): ")
   print(f"Just to be sure, do you want to target {name}?")
@@ -73,6 +82,7 @@ while True:
     break
   else:
     print("Ok then.")
+sys.stdin = devnull
 os.system('clear')
 time.sleep(0.1)
 print()
@@ -136,6 +146,18 @@ print(random_line('load.txt'))
 time.sleep(0.7)
 print(random_line('load.txt'))
 time.sleep(0.7)
+print(random_line('load.txt'))
+time.sleep(0.7)
+print(random_line('load.txt'))
+time.sleep(0.7)
+print(random_line('load.txt'))
+time.sleep(0.7)
+print(random_line('load.txt'))
+time.sleep(0.7)
+print(random_line('load.txt'))
+time.sleep(0.7)
+print(random_line('load.txt'))
+time.sleep(0.5)
 print(random_line('load.txt'))
 time.sleep(0.7)
 print(random_line('load.txt'))
@@ -215,8 +237,10 @@ time.sleep(1)
 print(f"I should have asked you this in the beginning, but what's {name}'s gender?")
 #this could be optimized... but i'm too lazy to mess with the spaghetti that's here now.
 while True:
+  sys.stdin = stdin_backup
   gender = input("(boy/girl) ")
-  if gender.lower() == "Boy":
+  sys.stdin = devnull
+  if gender.lower() == "Boy" or "boy":
     logger.info(f'Name = {name}')
     logger.info(f'Result = {num}%')
     logger.info(f'Gender = {gender}')
@@ -231,13 +255,16 @@ while True:
     print("Alright, the results are in.")
     time.sleep(0.5)
     print()
-    if (num) == 100:
+    if (num) >= 80:
       print(f"{name} is {num}% gay! They passed the test with flying colors!")
+      break
+    if (num) >= 50:
+      print(f"{name} is {num}% gay! They're shooting to the top!")
       break
     else:
       print(f"{name} is {num}% gay!")
       break
-  if gender.lower() == "boy":
+  if gender.lower() == "Girl" or "girl":
     logger.info(f'Name = {name}')
     logger.info(f'Result = {num}%')
     logger.info(f'Gender = {gender}')
@@ -252,47 +279,11 @@ while True:
     print("Alright, the results are in.")
     time.sleep(0.5)
     print()
-    if (num) == 100:
-      print(f"{name} is {num}% gay! They passed the test with flying colors!")
-      break
-    else:
-      print(f"{name} is {num}% gay!")
-      break
-  if gender.lower() == "Girl":
-    logger.info(f'Name = {name}')
-    logger.info(f'Result = {num}%')
-    logger.info(f'Gender = {gender}')
-    logger.info('----------')
-    print("Ok, I'll try calculating it again with the correct infomation now.")
-    time.sleep(2)
-    print()
-    print()
-    print()
-    print()
-    print()
-    print("Alright, the results are in.")
-    time.sleep(0.5)
-    print()
-    if (num) == 100:
+    if (num) >= 80:
       print(f"{name} is {num}% lesbian! They passed the test with flying colors!")
       break
-    else:
-      print(f"{name} is {num}% lesbian!")
-      break
-  if gender.lower() == "girl":
-    print("Ok, I'll try calculating it again with the correct infomation now.")
-    time.sleep(2)
-    print()
-    print()
-    print()
-    print()
-    print()
-    print("Alright, the results are in.")
-    time.sleep(1)
-    print()
-    if (num) == 100:
-      print(f"{name} is {num}% lesbian! They passed the test with flying colors!")
-      break
+    if (num) >= 50:
+      print(f"{name} is {num}% lesbian! They're shooting to the top!")
     else:
       print(f"{name} is {num}% lesbian!")
       break
@@ -313,6 +304,9 @@ while True:
     print()
     if (num) == 100:
       print(f"{name} is {num}% gay and lesbian somehow! They passed the test with flying colors!")
+      break
+    if (num) >= 50:
+      print(f"{name} is {num}% gay and lesbian somehow! They're shooting to the top!")
       break
     else:
       print(f"{name} is {num}% gay and lesbian somehow!")
@@ -423,7 +417,7 @@ while True:
     time.sleep(1)
     print("Error: GAYDAR Helper (Experimental) exited with code 14!")
     print("Warning: all fallbacks exhausted")
-    print("Exit command recieved from GAYDAR Error Handler, Stopping program...")
+    print("Exit command recieved from GAYDAR Error Handler, stopping program...")
     time.sleep(1)
     print("GAYDAR exited with code 0. Have a nice day!")
     break
